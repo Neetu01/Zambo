@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/tools"
+    tools:context=".Activity.BbpsActivity">
+
+    <RelativeLayout
+        android:id="@+id/toolbar_bbps"
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_height="@dimen/DP50">
+
+        <ImageView
+            android:id="@+id/img_back_bbps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/DP8"
+            android:src="@drawable/back"/>
+
+
+
+
+
+    </RelativeLayout>
+<com.github.aakira.expandablelayout.ExpandableRelativeLayout
+    android:layout_width="match_parent"
+    android:id="@+id/expandablelayout"
+    android:layout_below="@+id/toolbar_bbps"
+    android:background="#90066da1"
+    android:padding="16dp"
+    app:ael_duration="400"
+    android:layout_height="40dp"
+    app:ael_expanded="false"
+    app:ael_interpolator="bounce"
+    app:ael_orientation="vertical">
+
+    <TextView
+        android:id="@+id/txt_balance_bbps"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:textSize="12sp"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:padding="@dimen/DP8"
+        android:text=""/>
+
+    <ProgressBar
+        android:id="@+id/progressbar_bbps"
+        android:layout_width="@dimen/DP35"
+        android:layout_height="@dimen/DP35"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/DP15"
+        android:layout_centerVertical="true"/>
+</com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview_bbps"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/DP5"
+        android:padding="@dimen/DP5"
+        android:layout_below="@+id/toolbar_bbps"
+        card_view:cardBackgroundColor="@color/white"
+        card_view:cardCornerRadius="@dimen/DP4"
+        card_view:cardElevation="@dimen/DP5"
+        card_view:contentPadding="@dimen/DP4">
+
+        <GridView
+            android:id="@+id/gridview_bbps"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:horizontalSpacing="@dimen/DP8"
+            android:numColumns="2"
+            android:scrollbars="none"
+            android:verticalSpacing="@dimen/DP8">
+
+        </GridView>
+
+    </androidx.cardview.widget.CardView>
+
+    <ScrollView
+        android:id="@+id/scrollview_bbps"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/cardview_bbps"
+        android:scrollbars="none"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linear_bbps"
+            android:padding="@dimen/DP10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:background="@drawable/box"
+                android:layout_marginTop="@dimen/DP8"
+                android:layout_height="55dp">
+
+                <Spinner
+                    android:id="@+id/operator_list_bbps"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:paddingStart="@dimen/DP5"
+                    android:imeOptions="actionNext"
+                    android:spinnerMode="dialog"
+                    android:dropDownWidth="match_parent"
+                    tools:ignore="RtlSymmetry" />
+
+            </RelativeLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/DP10"
+                android:id="@+id/input_first"
+                android:hint=""
+                android:visibility="gone"
+                android:layout_height="55dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edittext_first"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint=""
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:textSize="@dimen/SP14"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:paddingStart="@dimen/DP8"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    tools:ignore="RtlSymmetry">
+                </com.google.android.material.textfield.TextInputEditText>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/DP10"
+                android:id="@+id/input_second"
+                android:visibility="gone"
+                android:hint=""
+                android:layout_height="55dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edittext_second"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint=""
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:textSize="@dimen/SP14"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:paddingStart="@dimen/DP8"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    tools:ignore="RtlSymmetry">
+                </com.google.android.material.textfield.TextInputEditText>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/DP10"
+                android:id="@+id/input_third"
+                android:visibility="gone"
+                android:hint=""
+                android:layout_height="55dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edittext_third"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint=""
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:textSize="@dimen/SP14"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:paddingStart="@dimen/DP8"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    tools:ignore="RtlSymmetry">
+                </com.google.android.material.textfield.TextInputEditText>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/DP10"
+                android:id="@+id/input_four"
+                android:visibility="gone"
+                android:hint=""
+                android:layout_height="55dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edittext_four"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint=""
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:textSize="@dimen/SP14"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:paddingStart="@dimen/DP8"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    tools:ignore="RtlSymmetry">
+                </com.google.android.material.textfield.TextInputEditText>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_fetchbill"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0B0C2E"
+        android:layout_alignParentBottom="true"
+        android:text="@string/continu"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/SP15"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/btn_bbps"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content"
+        android:background="#0B0C2E"
+        android:text="@string/pay"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/SP15"
+        android:textAllCaps="false"/>
+
+
+</RelativeLayout>

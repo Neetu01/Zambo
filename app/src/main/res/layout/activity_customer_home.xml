@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Activity.CustomerHomeActivity">
+
+    <RelativeLayout
+        android:id="@+id/toolbar_customer"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/imgback_customer"
+            android:layout_width="55dp"
+            android:layout_height="40dp"
+            android:padding="@dimen/DP10"
+            android:src="@drawable/back"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:id="@+id/txt_title_customer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/imgback_customer"
+            android:text="@string/thank_you"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:typeface="sans"
+            android:layout_toEndOf="@+id/imgback_customer"
+            tools:ignore="RelativeOverlap,RtlHardcoded" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txt_balance_customer"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DP35"
+        android:background="@color/gray_light"
+        android:layout_below="@+id/toolbar_customer"
+        android:textColor="@color/black"
+        android:text=""
+        android:gravity="center"
+        android:textSize="@dimen/SP18"
+        android:textStyle="bold"
+        android:textAllCaps="true"/>
+
+    <ProgressBar
+        android:id="@+id/prog_bar_customer"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/DP35"
+        android:layout_below="@+id/toolbar_customer"
+        android:layout_centerHorizontal="true"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:padding="@dimen/DP15"
+        android:layout_below="@+id/txt_balance_customer"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:background="@drawable/box"
+                android:layout_marginTop="@dimen/DP8"
+                android:layout_height="55dp">
+
+                <Spinner
+                    android:id="@+id/operator_list_customer"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:paddingStart="@dimen/DP5"
+                    android:imeOptions="actionNext"
+                    android:spinnerMode="dialog"
+                    android:dropDownWidth="match_parent"
+                    tools:ignore="RtlSymmetry" />
+
+            </RelativeLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/DP10"
+                android:id="@+id/input_mobile"
+                android:hint=""
+                android:layout_height="55dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edittext_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint=""
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:textSize="@dimen/SP14"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:paddingStart="@dimen/DP8"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    tools:ignore="RtlSymmetry">
+                </com.google.android.material.textfield.TextInputEditText>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/DP10"
+                android:id="@+id/input_second"
+                android:visibility="gone"
+                android:hint=""
+                android:layout_height="55dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edittext_second"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint=""
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:textSize="@dimen/SP14"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:paddingStart="@dimen/DP8"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    tools:ignore="RtlSymmetry">
+                </com.google.android.material.textfield.TextInputEditText>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/DP10"
+                android:id="@+id/input_three"
+                android:visibility="gone"
+                android:hint=""
+                android:layout_height="55dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edittext_three"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint=""
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:textSize="@dimen/SP14"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:maxLength="10"
+                    android:paddingStart="@dimen/DP8"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    tools:ignore="RtlSymmetry">
+                </com.google.android.material.textfield.TextInputEditText>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:hint="Enter Amount"
+                android:layout_marginTop="@dimen/DP8"
+                android:id="@+id/input_amount"
+                android:layout_height="55dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edittext_amount_customer"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingStart="@dimen/DP8"
+                    android:textSize="@dimen/SP14"
+                    android:hint=""
+                    android:imeOptions="actionDone"
+                    android:inputType="numberDecimal"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    tools:ignore="RtlSymmetry">
+                </com.google.android.material.textfield.TextInputEditText>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+    <FrameLayout
+        android:id="@+id/framelayout_customer"
+        android:layout_below="@id/toolbar_customer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/btn_customer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Recharge"
+        android:layout_marginTop="25dp"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"
+        android:textSize="16sp"
+        android:textAllCaps="false"
+        android:background="#0B0C2E"
+        android:layout_gravity="center"
+        android:paddingRight="25dp"
+        android:paddingLeft="25dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.HistoryActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_toolbar_history"
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_height="@dimen/DP50">
+
+        <ImageView
+            android:id="@+id/img_back_history"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/DP15"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/img_back_history"
+            android:text="@string/history"
+            android:textStyle="bold"
+            android:textSize="@dimen/SP18"
+            android:textColor="@color/white"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/img_back_history" />
+
+    </RelativeLayout>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tablayout_transaction"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        app:tabTextColor="@color/black"
+        app:tabMode="scrollable"
+        android:isScrollContainer="true"
+        android:scrollIndicators="bottom"
+        app:tabTextAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        app:tabIndicatorHeight="3.5dp"
+        app:tabSelectedTextColor="@color/colorPrimary"
+        app:tabIndicatorColor="@color/colorPrimary"
+        android:layout_below="@+id/rl_toolbar_history"/>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager_transaction"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:padding="8dp"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tablayout_transaction">
+    </androidx.viewpager.widget.ViewPager>
+
+    <LinearLayout
+        android:id="@+id/ln_title_recharge"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:visibility="gone"
+        android:layout_marginTop="0.5dp"
+        android:layout_below="@+id/rl_toolbar_history"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Date"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/white"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:text="Trans. Id"
+            android:textColor="@color/white"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="16sp"
+            android:text="Cr./Dr."
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="16sp"
+            android:text="Avail. Bal"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview_customer_history"
+        android:layout_below="@+id/ln_title_recharge"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="match_parent">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <RelativeLayout
+        android:id="@+id/rl_wl_trans_recharge"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_below="@+id/rl_toolbar_history"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/img_wl_trans_recharge"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:src="@drawable/norequest"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/txt_wl_trans_recharge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img_wl_trans_recharge"
+            android:layout_centerHorizontal="true"
+            android:text="No Transaction"
+            android:textColor="@color/red"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

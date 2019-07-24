@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:orientation="vertical"
+            android:layout_height="fill_parent"
+            tools:ignore="ScrollViewSize">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <AutoCompleteTextView
+                    android:id="@+id/edit_benf_bank"
+                    android:layout_width="match_parent"
+                    android:layout_margin="8dp"
+                    android:hint="Type Bank Name"
+                    android:singleLine="true"
+                    android:textSize="14sp"
+                    android:inputType="textCapCharacters"
+                    android:textIsSelectable="false"
+                    android:imeOptions="actionNext"
+                    android:layout_height="50dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/edit_acc_benef"
+                    android:layout_width="match_parent"
+                    android:layout_margin="8dp"
+                    android:hint="Account Number"
+                    android:singleLine="true"
+                    android:textSize="14sp"
+                    android:inputType="number"
+                    android:imeOptions="actionNext"
+                    android:layout_height="50dp" />
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/edit_ifsc_benef"
+                    android:layout_width="match_parent"
+                    android:layout_margin="8dp"
+                    android:hint="IFSC No."
+                    android:editable="false"
+                    android:textSize="14sp"
+                    android:textIsSelectable="false"
+                    android:singleLine="true"
+                    android:inputType="textCapCharacters"
+                    android:imeOptions="actionNext"
+                    android:layout_height="50dp" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/edit_name_benef"
+                    android:layout_width="match_parent"
+                    android:layout_margin="8dp"
+                    android:hint="Name"
+                    android:textSize="14sp"
+                    android:singleLine="true"
+                    android:inputType="textCapCharacters"
+                    android:imeOptions="actionDone"
+                    android:layout_height="50dp" />
+
+                <TextView
+                    android:id="@+id/txt_verify"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:text="@string/verify"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/DP15"
+                    android:textColor="@color/green"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/SP18"/>
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btn_add_ben"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_margin="10dp"
+                android:text="@string/add_benef"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                android:background="@color/red"/>
+
+            <TextView
+                android:id="@+id/txt_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Cancel"
+                android:textSize="16sp"
+                android:textColor="@color/red"
+                android:padding="8dp"
+                android:layout_marginTop="10dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

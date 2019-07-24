@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Activity.HomeActivity">
+
+    <RelativeLayout
+        android:id="@+id/toolbar_recharge"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/imgback_recharge"
+            android:layout_width="55dp"
+            android:layout_height="40dp"
+            android:src="@drawable/back"
+            android:layout_centerVertical="true"
+            android:padding="10dp"/>
+
+        <TextView
+            android:id="@+id/txt_home_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/imgback_recharge"
+            android:text="Recharge"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:typeface="sans"/>
+
+
+        <ProgressBar
+            android:id="@+id/prog_fund"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginRight="35dp"
+            style="@style/Base.TextAppearance.AppCompat.Small"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"/>
+
+        <TextView
+            android:id="@+id/txt_balance_rechargee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textStyle="bold"
+            android:padding="15dp"
+            android:layout_marginRight="5dp"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:text="Balance"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/toolbar_recharge"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/txt_title"
+                android:layout_width="wrap_content"
+                android:text="Recharge Your Mobile"
+                android:layout_gravity="center"
+                android:textSize="22sp"
+                android:padding="10dp"
+                android:layout_height="wrap_content" />
+
+            <RadioGroup
+                android:id="@+id/radio_mobile"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/prep_mob"
+                    android:layout_width="match_parent"
+                    android:layout_weight="0.50"
+                    android:text="Prepaid"
+                    android:layout_marginRight="15dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_height="match_parent" />
+
+                <RadioButton
+                    android:id="@+id/post_mob"
+                    android:layout_width="match_parent"
+                    android:layout_weight="0.50"
+                    android:text="Postpaid"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16sp"
+                    android:layout_height="match_parent" />
+
+            </RadioGroup>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="8dp"
+                android:id="@+id/input_mobile"
+                android:layout_height="50dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edittext_mobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint=""
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:textColor="@color/black"
+                    android:textStyle="normal"
+                    android:maxLines="1"
+                    android:singleLine="true">
+                </com.google.android.material.textfield.TextInputEditText>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/DP8"
+                android:layout_height="wrap_content">
+
+                <AutoCompleteTextView
+                    android:id="@+id/operator_lis"
+                    android:layout_width="match_parent"
+                    android:imeOptions="actionNext"
+                    android:singleLine="true"
+                    android:hint="Select Operator"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:hint="Enter Amount"
+                android:id="@+id/input_amount"
+                android:layout_height="50dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edittext_amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint=""
+                    android:imeOptions="actionDone"
+                    android:inputType="numberDecimal"
+                    android:textColor="@color/black"
+                    android:textStyle="normal"
+                    android:maxLines="1"
+                    android:singleLine="true">
+                </com.google.android.material.textfield.TextInputEditText>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <Button
+                android:id="@+id/btn_recharge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Recharge"
+                android:layout_marginTop="25dp"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textAllCaps="false"
+                android:background="@color/colorPrimaryDark"
+                android:layout_gravity="center"
+                android:paddingRight="25dp"
+                android:paddingLeft="25dp"/>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

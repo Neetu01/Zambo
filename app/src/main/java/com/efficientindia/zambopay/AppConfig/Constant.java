@@ -1,0 +1,114 @@
+package com.efficientindia.zambopay.AppConfig;
+
+/**
+ * Created by aftab on 4/26/2018.
+ */
+
+public class Constant {
+    static final String PREFS_NAME = "zambo";
+    static final String LOGIN_MOBILE ="loginMobile";
+    static final String PASSWORD="loginPassword";
+    public static final String NAME="name";
+    static final String REG_NAME="signupName";
+    static final String REG_EMAIL="signupEmail";
+    static final String REG_MOBILE="signupMobile";
+    static final String REG_PASSWORD = "signuploginPassword";
+    public static final String U_UID = "uUid";
+    public static final String SERVICE = "service";
+    public static final String MOBILE_NUMBER = "mobileNumber";
+    public static final String OPERATOR = "operator";
+    public static final String AMOUNT = "amount";
+    public static final String RECHARGE_TYPE = "rechargeType";
+    public static final String SENDER_MOBILE = "SenderMobileNo";
+    public static final String USER_ID = "userId";
+    public static final String SENDER_NAME = "SenderName";
+    public static final String SENDER_OTP = "SenderOTP";
+    public static final String BENE_NAME = "beneName";
+    public static final String BANK_ACCOUNT = "BankAccount";
+    public static final String IFSC = "BankCode_IFSC";
+    public static final String RECIPIENT_ID = "RecipientId";
+    public static final String ACCOUNT="account";
+    public static final String TRANS_AMOUNT="transamount";
+    public static final String TRANS_MODE="transMode";
+    public static final String TRANS_IFSC="ifsc";
+    public static final String MOBILE_PREPAID = "mobilePrepaid";
+    public static final String MOBILE_POSTPAID = "mobilePostpaid";
+    static final String COMPANY_NAME="company";
+    static final String ADDRESS_LINE1="addressLine1";
+    static final String ADDRESS_LINE2="addressLine2";
+    static final String CITY="city";
+    static final String STATE="state";
+    static final String PINCODE="pin";
+    static final String USER_PHOTO="userphoto";
+    public static final String MESSAGE = "message";
+    public static final String BANK_RRN = "bankrrn";
+    public static final String TRANS_TYPE = "transtype";
+    public static final String STATUS = "status";
+    public static final String INSURANCE = "insurance";
+    public static final String LANDLINE = "landline";
+    public static final String GAS = "gasvalue";
+    public static final String ELECTRICITY = "electricity";
+    public static final String POSTPAID = "postpaid";
+    public static final String DATACARD = "datacard";
+    public static final String DTH = "dthValue";
+    public static final String PREPAID = "prepaid";
+    public static final String AEPS = "aepsvalue";
+    public static final String MONEY = "moneyTransfer";
+    public static final String BALANCE = "balance";
+    public static final String RESPONSE = "response";
+    public static final String HOME = "home";
+    public static final String RECHARGE = "rechargeValue";
+    public static final String USER_TYPE = "type";
+    public static final String CUSTOMER_SERVICE = "customerService";
+    public static final String MOBILE = "mobile";
+    public static final String ACCOUNT_NUMBER = "accountnum";
+    public static final String STD_CODE = "stdcode";
+    public static final String CUSTOMER_PREPAID = "customerPrepaid";
+    public static final String CUSTOMER_DTH = "customerDth";
+    public static final String CUSTOMER_POSTPAID = "customerPostpaid";
+    public static final String CUSTOMER_LANDLINE = "customerLandline";
+    public static final String CUSTOMER_BROADBAND = "customerBroadband";
+    public static final String CUSTOMER_ELECTRICITY = "customerElectricity";
+    public static final String CUSTOMER_GAS = "customerGas";
+    public static final String CUSTOMER_WATER = "customerWater";
+    public static final String CUSTOMER_CREDITCARD = "customerCreditCard";
+    public static final String CUSTOMER_INSURANCE = "customerInsurance";
+    public static final String AGENT = "agent";
+    public static final String RECHARGE_THREE = "rechargeThree";
+    public static final String RECHARGE_TWO="rechargeTwo";
+    public static final String DMT_2 = "dmttwo";
+    public static final String DMT_3="dmtthree";
+    public static final String DMT_4="dmtfour";
+    public static final String DMT_1="dmtone";
+    public static final String BBPS = "bbpsStatus";
+    public static final String USER_MOBILE = "userMobile";
+    public static final String BILLER_ID = "billerId";
+    public static final String TRANS_ID = "transid";
+    public static final String IP = "ip";
+    public static final String AEPS_2 = "aeps2";
+    public static final String AEPS_1 = "aeps1";
+    public static final String RECHARGE_3 = "recharge3";
+    public static final String RECHARGE_2="recharge2";
+    public static final String CUST_FIRSTNAME = "cust_f_name";
+    public static final String CUST_LASTTNAME = "cust_l_name";
+    public static final String BANK_NAME = "BankName";
+    public static final String BENE_OTP = "beneOTP";
+    public static final String MOBILE_SENDER = "mobileSender";
+    public static final String BANK_NAME_DMT = "bankname";
+    public static final String BANK_ID = "bankid";
+    public static final String BENE_MOBILE = "benemobile";
+    public static final String SOURCE = "source";
+    public static final String FIRST = "first";
+    public static final String SECOND = "second";
+    public static final String THIRD = "third";
+    public static final String FOUR = "four";
+    public static final String TO_MAIN = "towalletamount";
+    public static final String TO_BANK = "tobankamount";
+    public static final String Micro_atm="microatm";
+    /*==============================================================================================*/
+    public static final String MERCHANT_ID = "THHHARBNLI";
+    public static final String MERCH_SALT = "H77KIDC49A";
+    public static final String PAY_MODE = "production";
+    /*==============================================================================================*/
+
+}

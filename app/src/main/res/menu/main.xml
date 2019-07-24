@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <!--<item android:id="@+id/wallet"
+        android:title="0/-"
+        android:icon=""
+        android:actionLayout="@layout/wallet_count"
+        app:showAsAction="always" />-->
+
+   <!-- <item android:id="@+id/notic"
+        android:actionLayout="@layout/feed_update_count"
+        android:icon="@drawable/bell"
+        android:title="next"
+        app:showAsAction="always" />
+
+    <item android:id="@+id/wallet"
+        android:title="0/-"
+        android:icon="@drawable/downarrow"
+        app:showAsAction="always" />-->
+    <item android:id="@+id/wallet1"
+        android:title="next"
+
+        android:icon="@drawable/ic_purse"
+        app:showAsAction="always" />
+
+</menu>

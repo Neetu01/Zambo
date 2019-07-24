@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/img_dialog"
+        android:layout_width="@dimen/DP100"
+        android:layout_height="@dimen/DP100"
+        android:padding="@dimen/DP20"
+        android:src="@drawable/warning"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/txt_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text=""
+        android:layout_below="@+id/img_dialog"
+        android:padding="@dimen/DP8"
+        android:textSize="@dimen/SP18"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/DP5"
+        android:weightSum="1"
+        android:layout_below="@id/txt_dialog"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_cancel_dialog"
+            android:layout_width="match_parent"
+            android:layout_weight="0.50"
+            android:text="@string/cancel_btn"
+            android:textSize="@dimen/SP16"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_margin="@dimen/DP5"
+            android:background="@color/red"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btn_continue_dialog"
+            android:layout_width="match_parent"
+            android:layout_weight="0.50"
+            android:text="@string/continu"
+            android:textSize="@dimen/SP16"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_margin="@dimen/DP5"
+            android:background="@color/green"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</RelativeLayout>

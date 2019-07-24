@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1A709A</color>
+  <!--  <color name="colorPrimaryDark">#00b2ff</color>-->
+
+    <color name="profilebackground">#D7D7D7</color>
+    <color name="colorPrimaryDark">#15516F</color>
+    <color name="colorAccent">#f54600</color>
+    <color name="viewcolor">#00065c</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="bla_trans">#C0000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="text_gray">#696969</color>
+    <color name="red">#e1011b</color>
+    <color name="card_color">#43f7ceb8</color>
+    <color name="rl_back">#c9caca</color>
+    <color name="green">#32ac43</color>
+    <color name="blue">#204ab4</color>
+    <color name="button_color">#00065c</color>
+    <color name="colorNavIcon">#dae9f6</color>
+    <color name="colorNavText">#01294b</color>
+
+</resources>

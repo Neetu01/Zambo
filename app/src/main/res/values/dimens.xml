@@ -1,0 +1,37 @@
+<resources>
+
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+
+    <dimen name="DP2">2dp</dimen>
+    <dimen name="DP3">3dp</dimen>
+    <dimen name="DP4">4dp</dimen>
+    <dimen name="DP5">5dp</dimen>
+    <dimen name="DP6">6dp</dimen>
+    <dimen name="DP8">8dp</dimen>
+    <dimen name="DP10">10dp</dimen>
+    <dimen name="DP12">12dp</dimen>
+    <dimen name="DP15">15dp</dimen>
+    <dimen name="DP18">18dp</dimen>
+    <dimen name="DP20">20dp</dimen>
+    <dimen name="DP25">25dp</dimen>
+    <dimen name="DP35">35dp</dimen>
+    <dimen name="DP40">40dp</dimen>
+    <dimen name="DP45">45dp</dimen>
+    <dimen name="DP50">50dp</dimen>
+    <dimen name="DP60">60dp</dimen>
+    <dimen name="DP80">80dp</dimen>
+    <dimen name="DP100">100dp</dimen>
+    <dimen name="DP120">120dp</dimen>
+    <dimen name="DP140">140dp</dimen>
+    <dimen name="DP150">150dp</dimen>
+
+    <dimen name="SP10">10sp</dimen>
+    <dimen name="SP14">14sp</dimen>
+    <dimen name="SP15">15sp</dimen>
+    <dimen name="SP16">16sp</dimen>
+    <dimen name="SP18">18sp</dimen>
+    <dimen name="SP12">12sp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+
+</resources>

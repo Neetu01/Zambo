@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_close"
+        android:paddingRight="@dimen/DP8"
+        android:layout_gravity="end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/img_close_add_sender"
+            android:layout_width="@dimen/DP35"
+            android:layout_height="@dimen/DP35"
+            android:src="@drawable/close"
+            android:padding="@dimen/DP10"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/close"
+            android:layout_toRightOf="@+id/img_close_add_sender"
+            android:layout_centerVertical="true"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:textSize="@dimen/SP18"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_sender_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:hint="@string/mobile_no"
+            android:layout_marginLeft="@dimen/DP8"
+            android:layout_marginRight="@dimen/DP8"
+            android:id="@+id/input_sender_mobile"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edittext_sender_mobile"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint=""
+                android:imeOptions="actionSend|actionGo|actionDone"
+                android:inputType="none"
+                android:editable="false"
+                android:selectAllOnFocus="false"
+                android:maxLength="10"
+                android:textColor="@color/black"
+                android:textStyle="normal"
+                android:maxLines="1"
+                android:singleLine="true">
+            </com.google.android.material.textfield.TextInputEditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/txt_otp_sender"
+            android:layout_width="wrap_content"
+            android:text="@string/enter_otp"
+            android:textColor="@color/black"
+            android:textStyle="normal"
+            android:textAllCaps="false"
+            android:paddingLeft="@dimen/DP8"
+            android:textSize="@dimen/SP16"
+            android:layout_height="wrap_content" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:hint="@string/otp"
+                android:layout_marginLeft="@dimen/DP8"
+                android:layout_marginRight="@dimen/DP8"
+                android:id="@+id/input_sender_otp"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edittext_sender_otp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint=""
+                    android:imeOptions="actionSend|actionGo|actionDone"
+                    android:inputType="number"
+                    android:textColor="@color/black"
+                    android:textStyle="normal"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+
+                <requestFocus/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/txt_resend_sender_otp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="@dimen/DP10"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="@dimen/DP8"
+                android:textColor="@color/green"
+                android:textStyle="bold"
+                android:text="@string/resend_otp"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txt_name_sender"
+            android:layout_width="wrap_content"
+            android:text="@string/enter_name"
+            android:textColor="@color/black"
+            android:textStyle="normal"
+            android:textAllCaps="false"
+            android:paddingLeft="@dimen/DP8"
+            android:textSize="@dimen/SP16"
+            android:layout_height="wrap_content" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:hint="@string/first_name"
+            android:layout_marginLeft="@dimen/DP8"
+            android:layout_marginRight="@dimen/DP8"
+            android:id="@+id/input_sender_name"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edittext_sender_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint=""
+                android:imeOptions="actionSend|actionGo|actionDone"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:textStyle="normal"
+                android:maxLines="1"
+                android:singleLine="true">
+            </com.google.android.material.textfield.TextInputEditText>
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/DP8"
+            android:hint="@string/last_name"
+            android:layout_marginLeft="@dimen/DP8"
+            android:layout_marginRight="@dimen/DP8"
+            android:id="@+id/input_sender_lastname"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edittext_sender_lastname"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint=""
+                android:imeOptions="actionSend|actionGo|actionDone"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:textStyle="normal"
+                android:maxLines="1"
+                android:singleLine="true">
+            </com.google.android.material.textfield.TextInputEditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btn_add_name_sender"
+            android:layout_width="@dimen/DP150"
+            android:layout_height="wrap_content"
+            android:background="@color/green"
+            android:layout_gravity="center"
+            android:text="Add"
+            android:layout_margin="@dimen/DP10"
+            android:textSize="@dimen/SP16"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+</LinearLayout>

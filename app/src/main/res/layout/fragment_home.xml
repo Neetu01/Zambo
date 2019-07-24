@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="650dp"
+        android:layout_marginBottom="@dimen/DP80">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_margin="@dimen/DP10"
+            android:background="@drawable/wallet_background"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/DP120"
+                android:layout_margin="@dimen/DP5"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/balance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/DP10"
+                    android:text="Rs 200/-"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/DP18" />
+
+                <ProgressBar
+                    android:id="@+id/progressbar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/transactions"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/DP10"
+                    android:layout_below="@+id/balance"
+                    android:text="View transactions"
+                    android:clickable="true"
+                    android:autoLink="all"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/DP10" />
+
+
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/transactions"
+                    android:layout_height="59dp">
+
+                    <Button
+                        android:id="@+id/paymoney"
+                        android:layout_width="130dp"
+                        android:layout_height="44dp"
+                        android:layout_marginLeft="16dp"
+                        android:background="@drawable/button_background"
+                        android:text="@string/transfer"
+                        android:paddingLeft="@dimen/DP2"
+                        android:drawableLeft="@drawable/ic_transfer"
+                        android:textColor="#FFFFFF"
+                        android:textSize="@dimen/DP12"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="1.0" />
+
+                    <Button
+                        android:id="@+id/addmoney"
+                        android:layout_width="137dp"
+                        android:layout_height="43dp"
+                        android:background="@drawable/button_background"
+                        android:drawableLeft="@drawable/ic_add"
+                        android:text="@string/add_money"
+                        android:padding="@dimen/DP2"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/DP12"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintHorizontal_bias="0.934"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginLeft="@dimen/DP10"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"
+                android:clickable="true"
+                android:id="@+id/wallet"
+                android:background="@drawable/wallettransfer_background"
+                android:layout_height="30dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/DP10"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/white"
+                    android:text="Wallet transfer to bank"/>
+
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview_customer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/DP8"
+
+                android:background="@color/rl_back"
+                card_view:cardBackgroundColor="@color/white"
+                card_view:cardCornerRadius="@dimen/DP2"
+                card_view:cardElevation="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/rechargetext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/DP8"
+                android:text="@string/recharge"
+                android:textColor="@color/black"
+                android:textSize="@dimen/DP18"
+                android:textStyle="bold" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <GridView
+                        android:id="@+id/recharge"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rechargetext"
+                        android:layout_margin="@dimen/DP10"
+                        android:numColumns="2"
+                        android:scrollbars="horizontal" />
+                </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/billpaymenttext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/recharge"
+                android:layout_marginBottom="@dimen/DP8"
+                android:layout_marginTop="@dimen/DP10"
+                android:layout_marginLeft="@dimen/DP8"
+                android:text="@string/bill_payment"
+                android:textColor="@color/black"
+                android:textSize="@dimen/DP18"
+                android:textStyle="bold" />
+
+            <GridView
+                android:id="@+id/billpayment"
+                android:layout_width="wrap_content"
+                android:layout_height="322dp"
+                android:layout_below="@+id/billpaymenttext"
+                android:layout_margin="@dimen/DP10"
+                android:numColumns="3">
+
+            </GridView>
+
+          <!--  <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="@dimen/DP10"
+                android:layout_marginLeft="@dimen/DP20"
+                android:layout_marginRight="@dimen/DP20"
+                android:background="@color/profilebackground"/>-->
+
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <!-- <ScrollView
+        android:id="@+id/scrollview_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">-->
+
+            <!--<LinearLayout
+    android:layout_width="match_parent"
+    android:paddingLeft="@dimen/DP15"
+    android:paddingRight="@dimen/DP15"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/linear_recharge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardview_recharge_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/DP5"
+                    android:layout_weight="0.50"
+                    card_view:cardBackgroundColor="@color/white"
+                    card_view:cardCornerRadius="@dimen/DP5"
+                    card_view:cardElevation="8dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="90dp"
+                            android:layout_height="70dp"
+                            android:padding="@dimen/DP8"
+                            android:layout_gravity="center"
+                            android:src="@drawable/mobile" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:paddingBottom="@dimen/DP5"
+                            android:text="@string/recharge_2"
+                            android:lines="2"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/SP14"
+                            android:textAllCaps="true"
+                            android:textColor="@color/black"  />
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardview_recharge_three"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/DP5"
+                    android:layout_weight="0.50"
+                    card_view:cardBackgroundColor="@color/white"
+                    card_view:cardCornerRadius="@dimen/DP5"
+                    card_view:cardElevation="8dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="90dp"
+                            android:layout_height="70dp"
+                            android:padding="@dimen/DP8"
+                            android:layout_gravity="center"
+                            android:src="@drawable/mobile" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:paddingBottom="@dimen/DP5"
+                            android:text="@string/recharge_3"
+                            android:lines="2"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/SP14"
+                            android:textAllCaps="true"
+                            android:textColor="@color/black"  />
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/linear_aeps"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardview_aeps"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/DP5"
+                    android:visibility="gone"
+                    android:layout_weight="0.50"
+                    android:background="@color/rl_back"
+                    card_view:cardBackgroundColor="@color/white"
+                    card_view:cardCornerRadius="@dimen/DP5"
+                    card_view:cardElevation="8dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="90dp"
+                            android:layout_height="70dp"
+                            android:padding="@dimen/DP8"
+                            android:layout_gravity="center"
+                            android:src="@drawable/aeps" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:paddingBottom="@dimen/DP5"
+                            android:text="@string/aeps"
+                            android:lines="2"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/SP14"
+                            android:textAllCaps="true"
+                            android:textColor="@color/black" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardview_aeps_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/DP5"
+                    android:layout_weight="0.50"
+                    android:background="@color/rl_back"
+                    card_view:cardBackgroundColor="@color/white"
+                    card_view:cardCornerRadius="@dimen/DP5"
+                    card_view:cardElevation="8dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="90dp"
+                            android:layout_height="70dp"
+                            android:padding="@dimen/DP8"
+                            android:layout_gravity="center"
+                            android:src="@drawable/aeps" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:paddingBottom="@dimen/DP5"
+                            android:text="@string/aeps"
+                            android:lines="2"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/SP14"
+                            android:textAllCaps="true"
+                            android:textColor="@color/black"  />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_bbps"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardview_bbps"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/DP5"
+                    android:layout_gravity="center"
+                    card_view:cardBackgroundColor="@color/white"
+                    card_view:cardCornerRadius="@dimen/DP5"
+                    card_view:cardElevation="8dp">
+
+                    <LinearLayout
+                        android:layout_width="@dimen/DP150"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="70dp"
+                            android:padding="@dimen/DP8"
+                            android:layout_gravity="center"
+                            android:src="@drawable/bbps" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="@string/bbps"
+                            android:textStyle="bold"
+                            android:lines="2"
+                            android:textSize="@dimen/SP14"
+                            android:textAllCaps="true"
+                            android:textColor="@color/black" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_money_transfer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardview_moneytransfer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/DP5"
+                    android:layout_weight="0.50"
+                    card_view:cardBackgroundColor="@color/white"
+                    card_view:cardCornerRadius="@dimen/DP5"
+                    card_view:cardElevation="8dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="90dp"
+                            android:layout_height="70dp"
+                            android:padding="@dimen/DP8"
+                            android:layout_gravity="center"
+                            android:src="@drawable/money" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:paddingBottom="@dimen/DP5"
+                            android:text="@string/money_transfer"
+                            android:lines="2"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/SP14"
+                            android:textAllCaps="true"
+                            android:textColor="@color/black" />
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardview_moneytransfer_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/DP5"
+                    android:layout_weight="0.50"
+                    card_view:cardBackgroundColor="@color/white"
+                    card_view:cardCornerRadius="@dimen/DP5"
+                    card_view:cardElevation="8dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="90dp"
+                            android:layout_height="70dp"
+                            android:padding="@dimen/DP8"
+                            android:layout_gravity="center"
+                            android:src="@drawable/money" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:paddingBottom="@dimen/DP5"
+                            android:lines="2"
+                            android:text="@string/money_transfer_two"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/SP14"
+                            android:textAllCaps="true"
+                            android:textColor="@color/black"  />
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+
+
+
+
+
+            <LinearLayout
+                android:id="@+id/linear_microatm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardview_microatm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/DP5"
+                    android:layout_gravity="center"
+                    card_view:cardBackgroundColor="@color/white"
+                    card_view:cardCornerRadius="@dimen/DP5"
+                    card_view:cardElevation="8dp">
+
+                    <LinearLayout
+                        android:layout_width="@dimen/DP150"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="70dp"
+                            android:padding="@dimen/DP8"
+                            android:layout_gravity="center"
+                            android:src="@drawable/micro_atm" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="Micro atm"
+                            android:textStyle="bold"
+                            android:lines="2"
+                            android:textSize="@dimen/SP14"
+                            android:textAllCaps="true"
+                            android:textColor="@color/black" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

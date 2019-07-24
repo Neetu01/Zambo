@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.efficientindia.zambopay">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-feature android:name="android.hardware.location.gps" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <application
+        android:name=".AppConfig.AppController"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:ignore="GoogleAppIndexingWarning,InnerclassSeparator,UnusedAttribute"
+        tools:replace="android:icon">
+        <activity
+            android:name=".Activity.AgentRechargeTwo"
+            android:label="@string/title_activity_agent_recharge_two"
+            android:theme="@style/AppTheme.WithHead"/>
+        <activity
+            android:name=".Activity.WebActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.WithHead" /> <!-- // <uses-library android:name="org.apache.http.legacy" android:required="false"/> -->
+        <activity
+            android:name=".Activity.BbpsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.WithHead" />
+        <activity
+            android:name=".Activity.Dmt_Transfer"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.WithHead" />
+        <activity
+            android:name=".Activity.AgentRechargeThree"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.WithHead" />
+        <activity
+            android:name=".Activity.CustomerHomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.WithHead" />
+        <activity
+            android:name=".Activity.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activity.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.WithHead" />
+        <activity
+            android:name=".Activity.MainActivity"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.WithHead" />
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="6d22372e3005bc4bc10b8ee4ff36fe1f498f6d79" />
+
+        <activity
+            android:name=".Activity.HomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.WithHead" />
+        <activity
+            android:name=".Activity.ProfileActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.WithHead" />
+        <activity
+            android:name=".Activity.HistoryActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.WithHead"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activity.AspsTransfer"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.WithHead" />
+        <activity
+            android:name=".Activity.Transfer"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.WithHead" />
+        <activity
+            android:name=".Activity.AddMoney"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.WithHead" />
+    </application>
+
+</manifest>

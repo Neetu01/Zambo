@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Button xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/wallet_count"
+    android:layout_width="35dp"
+    android:layout_height="35dp"
+    android:minWidth="32dp"
+    android:minHeight="32dp"
+    android:background="@drawable/wall"
+    android:textSize="14sp"
+    android:textColor="#ffffff"
+    android:gravity="center"
+    android:padding="2dp"
+    android:layout_marginLeft="30dp"
+    android:singleLine="true">
+</Button>

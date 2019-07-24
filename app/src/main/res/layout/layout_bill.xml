@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_gravity="center"
+            android:layout_height="@dimen/DP60"
+            android:src="@drawable/bharat"/>
+
+        <TextView
+            android:id="@+id/txt_service"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/DP15"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp"
+            android:text="Service Provider"
+            android:gravity="center"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_margin="8dp"
+            android:background="@color/gray"
+            android:layout_height="1dp"/>
+
+        <TextView
+            android:id="@+id/txt_customer_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textStyle="normal"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:text="Customer Number"
+            android:gravity="center"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_margin="8dp"
+            android:background="@color/gray"
+            android:layout_height="1dp"/>
+
+        <TextView
+            android:id="@+id/txt_cust_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textStyle="normal"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:text="Name"
+            android:gravity="center"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_margin="8dp"
+            android:background="@color/gray"
+            android:layout_height="1dp"/>
+
+        <TextView
+            android:id="@+id/txt_billnumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textStyle="normal"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:text="Bill Number"
+            android:gravity="center"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_margin="8dp"
+            android:background="@color/gray"
+            android:layout_height="1dp"/>
+
+        <TextView
+            android:id="@+id/txt_billperiod"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textStyle="normal"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:text="Bill Period"
+            android:gravity="center"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_margin="8dp"
+            android:background="@color/gray"
+            android:layout_height="1dp"/>
+
+        <TextView
+            android:id="@+id/txt_billdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textStyle="normal"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:text="Bill Date"
+            android:gravity="center"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_margin="8dp"
+            android:background="@color/gray"
+            android:layout_height="1dp"/>
+
+        <TextView
+            android:id="@+id/txt_duedate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textStyle="normal"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:text="Due Date"
+            android:gravity="center"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_margin="8dp"
+            android:background="@color/gray"
+            android:layout_height="1dp"/>
+
+        <TextView
+            android:id="@+id/txt_dueamount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textStyle="normal"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:text="Due Amount"
+            android:gravity="center"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_margin="8dp"
+            android:background="@color/gray"
+            android:layout_height="1dp"/>
+
+
+        <Button
+            android:id="@+id/btn_pay_bill"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_margin="10dp"
+            android:text="Pay Bill"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:background="@color/colorPrimaryDark"/>
+
+        <TextView
+            android:id="@+id/txt_canc_bill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Cancel"
+            android:textSize="16sp"
+            android:textColor="@color/red"
+            android:padding="8dp"
+            android:layout_marginTop="10dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

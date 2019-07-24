@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+     <!--   <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home"
+            android:title="@string/home" />-->
+
+
+        <!-- <item
+             android:id="@+id/nav_history"
+             android:icon="@drawable/history"
+             android:title="@string/trans_history" />
+         <item
+             android:id="@+id/nav_add_money"
+             android:icon="@drawable/profile"
+             android:title="@string/add_money" />
+         <item
+             android:id="@+id/nav_myprofile"
+             android:icon="@drawable/profile"
+             android:title="@string/my_profile" />
+         <item
+             android:id="@+id/nav_manage"
+             android:icon="@drawable/facebook"
+             android:title="Like us on facebook" />
+         <item
+
+             android:icon="@drawable/twitter"
+             android:title="Like us on Twitter" />
+         <item
+
+             android:icon="@drawable/google"
+             android:title="Follow us on Google" />-->
+
+        <item android:id="@+id/nav_refund"
+            android:icon="@drawable/refundicon"
+            android:title="@string/refund"/>
+
+        <item
+            android:id="@+id/nav_support"
+            android:icon="@drawable/support"
+            android:title="@string/support_desk" />
+
+        <item
+            android:id="@+id/nav_terms"
+            android:icon="@drawable/policy"
+            android:title="@string/pr_pol" />
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/logout"
+            android:title="@string/logout" />
+
+    </group>
+
+</menu>
